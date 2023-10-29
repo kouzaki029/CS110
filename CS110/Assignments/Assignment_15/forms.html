@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <h1>
+        CS110 Ice Breaker
+    </h1>
+    <form>
+        <label for="participantName">Participant's Name:</label><br>
+        <input type="text" id="participantName" name="participantName"><br><br>
+
+        <label for="secretNumber">Enter a Secret Number (e.g., 2):</label><br>
+        <input type="password" id=secretNumber name="secretNumber" size="15" maxlength="30"><br><br>
+
+        <label for="comment">What Is Your Favorite Time of Day, and Why:</label><br>
+        <textarea id="comment" name="comment" rows="4" cols="50">
+        </textarea><br><br>
+
+        Which Do You Prefer:<br>
+        <input type="radio" id="coffee" name="coffee" value="coffee">
+        <label for="coffee">coffee</label><br>
+        <input type="radio" id="tea" name="tea" value="tea">
+        <label for="tea">tea</label><br>
+        <input type="radio" id="neither" name="neither" value="neither">
+        <label for="neither">neither</label><br><br>
+
+        Select All That Apply:<br>
+        <input type="checkbox" id="catPerson" name="catPerson" value="catPerson">
+        <label for="catPerson">I am a cat-person</label><br>
+        <input type="checkbox" id="dogPerson" name="dogPerson" value="dogPerson">
+        <label for="dogPerson">I am a dog-person</label><br><br>
+
+        <label for="somethingHere_1">
+            Are You a Traveler or a Homebody?:
+            <select name="somethingHere_1" id="somethingHere_1">
+                <option value="traveler">traveler</option>
+                <option value="homebody">homebody</option>
+                <option value="both">both</option>
+            </select>
+        </label><br><br>
+
+        <label for="userImage">What's Your Favorite Picture You've Taken or Have Seen:</label><br>
+        <input type="file" id="userImage" name="userImage"><br><br>
+
+        <button type="button" onclick="alert('Have a great day!\n\nThank you for doing our Ice Breaker!')">
+            <img src="Face_with_Hand_Over_Mouth.png" alt="button" width="68.8" height="68.5">
+        </button><br><br>
+
+        <fieldset>
+            <legend>
+                Fun Fact
+            </legend>
+            <label>
+                Sea otters hold each others hands, so they won't drift apart.
+            </label>
+        </fieldset><br><br>
+
+        <input type="submit" value="Submit Response">
+    </form>
+</html>
