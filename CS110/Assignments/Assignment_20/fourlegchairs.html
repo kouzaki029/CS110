@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            New Page 1
+        </title>
+        <script language="JavaScript">
+            function Multiply(form){
+                //get three numbers off of the form in text format
+                var num_Of_Chairs = form.numOfChairs.value;
+                //convert the numbers to a numerical format for calculating
+                num_Of_Chairs=eval(num_Of_Chairs);
+                // do the calculation
+                var num_Of_Legs= (num_Of_Chairs * 4);
+                //put result of calculation on form
+                form.numOfLegs.value = num_Of_Legs;
+
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myForm">
+            Number of Chairs in the Truck:
+            <input type="text" name="numOfChairs">
+            <input type="button" name="go" value=" calculate " onClick="Multiply(this.form)"><br><br>
+            Number of Legs on a Truckload of 4 Legged Chairs:
+            <input type="text" name="numOfLegs">
+        </form>
+    </body>
+</html>
