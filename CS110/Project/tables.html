@@ -1,89 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    .header
-    {
-        font-size: 24pt;
-        background-color: #282C34;
-        color: #D4D4D4;
-        font-family: "Arial",serif;
-        font-weight: 500;
-    }
-    body
-    {
-        background-color: #282C34;
-        color: #D4D4D4;
-        font-family: "Arial",serif;
-    }
-    .url
-    {
-        background-color: #282C34;
-        color: #3F6693;
-        text-decoration-line: underline;
-        font-family: "Arial",serif;
-    }
-    .code
-    {
-        background-color: #282C34;
-        color: #D4D4D4;
-        font-family: "Courier New",serif;
-    }
-</style>
+    <style>
+        .header
+        {
+            font-size: 24pt;
+            background-color: #282C34;
+            color: #D4D4D4;
+            font-family: "Arial",serif;
+            font-weight: 500;
+        }
+        body
+        {
+            background-color: #282C34;
+            color: #D4D4D4;
+            font-family: "Arial",serif;
+        }
+        p
+        {
+            background-color: #282C34;
+            color: #D4D4D4;
+            font-family: "Arial",serif;
+            font-size: 16px;
+        }
+        .url
+        {
+            background-color: #282C34;
+            color: #3F6693;
+            text-decoration-line: underline;
+            font-family: "Arial",serif;
+        }
+        .example
+        {
+            background-color: #24272e;
+            color: #D4D4D4;
+            font-family: "Arial",serif;
+            font-size: 16px;
+        }
+        .code_angledBracket
+        {
+            background-color: #252B36;
+            color: #33C7DE;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .code_tag
+        {
+            background-color: #252B36;
+            color: #E9AD0C;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .example_code
+        {
+            background-color: #24272e;
+            color: #ffffff;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+    </style>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Tables in HTML</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tables in HTML</title>
+    </head>
 
-<body>
-<table width="98%">
-    <!-- Banner: -->
-    <tr>
-        <td height="50" colspan="3" class="header">
-            &nbsp;
-            CS 110 Summary
-        </td>
-    </tr>
+    <body>
+        <table width="98%">
+            <!-- Banner: -->
+            <tr>
+                <td height="50" colspan="3" class="header">
+                    &nbsp;
+                    CS 110 Summary
+                </td>
+            </tr>
 
-    <tr>
-        <!-- Table of Contents: -->
-        <td height="250" width="20%" style="vertical-align:top">
-            <p>
-                &nbsp;&nbsp;
-                <a href="index.html" class="url">Home</a>
-            </p>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="text.html" class="url">Text</a>
-            </p>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="lists.html" class="url">Lists</a>
-            </p>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="tables.html" class="url">Tables</a>
-            </p>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="forms.html" class="url">Forms</a>
-            </p>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="javascript.html" class="url">JavaScript</a>
-            </p>
-        </td>
+            <tr>
+                <!-- Table of Contents: -->
+                <td height="250" width="20%" style="vertical-align:top">
+                    <p>
+                        &nbsp;&nbsp;
+                        <a href="index.html" class="url">Home</a>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="text.html" class="url">Text</a>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="lists.html" class="url">Lists</a>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tables.html" class="url">Tables</a>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="forms.html" class="url">Forms</a>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="javascript.html" class="url">JavaScript</a>
+                    </p>
+                </td>
 
-        <!-- Main Column: -->
-        <td width="60%">
-            main columm
-        </td>
+                <!-- Main Column: -->
+                <td width="60%">
+                    <p>
+                        <br>
+                        Web developers can use HTML tables to organize data into rows and columns.
+                        <br>
+                    </p>
 
-        <!-- Right Column: -->
-        <td width="33%">
-            column 3
-        </td>
-    </tr>
-</table>
-</body>
+                    <hr>
+                    <div class="example">
+                        <br>
+                        <center>
+                            <h2>
+                                <center>
+                                    Safari Parks of Southern Africa
+                                </center>
+                            </h2>
+                            <table border = "border">
+                                <tr>
+                                    <td rowspan = "2">
+                                        <!--<img src = "elephant-small.jpg" width="150" height="100">-->
+                                    </td>
+                                    <th colspan = "4"> Wild Life Animals </th>
+                                </tr>
+                                <tr>
+                                    <th> Giraffes </th>
+                                    <th> Elephants </th>
+                                    <th> Lions </th>
+                                    <th> Zebras </th>
+                                </tr>
+                                <tr>
+                                    <th> Kruger Park </th>
+                                    <td> 5 </td>
+                                    <td> 127 </td>
+                                    <td> 23 </td>
+                                </tr>
+                                <tr>
+                                    <th> Moremi Park </th>
+                                    <td> 1 </td>
+                                    <td> 1 </td>
+                                    <td> 0 </td>
+                                    <td> 0 </td>
+                                </tr>
+                                <tr>
+                                    <th> Chobe Park </th>
+                                    <td> 1 </td>
+                                    <td> 1 </td>
+                                    <td> 0 </td>
+                                    <td> 0 </td>
+                                </tr>
+                            </table>
+                            <br>
+                            <i>Figure 1: Safari Parks of Southern Africa Table Example</i>
+                        </center>
+                        <br>
+                    </div>
+                    <hr>
+                    <p>
+                        Tables can be defined using the
+                        <span class="code_angledBracket">&lt;</span><span class="code_tag">table</span><span class="code_angledBracket">&gt;</span>
+                        tag,
+                        <span class="code_angledBracket">&lt;</span><span class="code_tag">tr</span><span class="code_angledBracket">&gt;</span>
+                        tag,
+                        <span class="code_angledBracket">&lt;</span><span class="code_tag">th</span><span class="code_angledBracket">&gt;</span>
+                        tag, and
+                        <span class="code_angledBracket">&lt;</span><span class="code_tag">td</span><span class="code_angledBracket">&gt;</span>
+                        tag.
+                    </p>
+                    <hr>
+                    <div class="example_code">
+                        <br>
+                        <span class="code_angledBracket">&lt;</span><span class="code_tag">table</span><span class="code_angledBracket">&gt;</span>
+                        <br>
+                            &nbsp;&nbsp;&nbsp;
+                            <span class="code_angledBracket">&lt;</span><span class="code_tag">tr</span><span class="code_angledBracket">&gt;</span>
+                                &nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;
+                                <span class="code_angledBracket">&lt;</span><span class="code_tag">th</span><span class="code_angledBracket">&gt;</span>
+                                    <p class="example_code">
+                                        &nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;
+                                        &nbsp;&nbsp;&nbsp;
+                                        Title
+                                    </p>
+                                &nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;
+                                <span class="code_angledBracket">&lt;/</span><span class="code_tag">th</span><span class="code_angledBracket">&gt;</span>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;
+                                <span class="code_angledBracket">&lt;</span><span class="code_tag">th</span><span class="code_angledBracket">&gt;</span>
+                                <br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;
+                                    Author
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;
+                                <span class="code_angledBracket">&lt;/</span><span class="code_tag">th</span><span class="code_angledBracket">&gt;</span>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;
+                                <span class="code_angledBracket">&lt;</span><span class="code_tag">th</span><span class="code_angledBracket">&gt;</span>
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;
+                                    Publication Year
+                                    <br>
+                                    &nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;
+                                <span class="code_angledBracket">&lt;/</span><span class="code_tag">th</span><span class="code_angledBracket">&gt;</span>
+                                <br>
+                                &nbsp;&nbsp;&nbsp;
+                            <span class="code_angledBracket">&lt;/</span><span class="code_tag">tr</span><span class="code_angledBracket">&gt;</span>
+                        <br>
+                        <span class="code_angledBracket">&lt;/</span><span class="code_tag">table</span><span class="code_angledBracket">&gt;</span>
+                        <div class="example">
+                            <center>
+                                <br>
+                                <i>Figure 2: A Simple Table in HTML</i>
+                            </center>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <br>
+
+                    To create a table, you need to first include the
+                    <span class="code_angledBracket">&lt;</span><span class="code_tag">table</span><span class="code_angledBracket">&gt;</span>
+                    tag, followed by an ending
+                    <span class="code_angledBracket">&lt;/</span><span class="code_tag">table</span><span class="code_angledBracket">&gt;</span>
+                    tag to indicate where the last line of the <b><u>table</u></b> is.
+                    <br>
+                    <br>
+                    Within the
+                    <span class="code_angledBracket">&lt;</span><span class="code_tag">table</span><span class="code_angledBracket">&gt;</span>
+                    tags, a following
+                    <span class="code_angledBracket">&lt;</span><span class="code_tag">tr</span><span class="code_angledBracket">&gt;</span>
+                    tag is included to indicate that a new <b><u>table row</u></b> is being created.
+                    <br>
+                    <br>
+                    Within the
+                    <span class="code_angledBracket">&lt;</span><span class="code_tag">tr</span><span class="code_angledBracket">&gt;</span>
+                    tags, data is added via the
+                    <span class="code_angledBracket">&lt;</span><span class="code_tag">th</span><span class="code_angledBracket">&gt;</span>
+                    tag, or the
+                    <span class="code_angledBracket">&lt;</span><span class="code_tag">td</span><span class="code_angledBracket">&gt;</span>
+                    tag.
+                    <br>
+                    <br>
+                    The
+                    <span class="code_angledBracket">&lt;</span><span class="code_tag">th</span><span class="code_angledBracket">&gt;</span>
+                    tag, states that the data is a header (e.g., "Wild Life Animals", "Giraffes", "Elephants", "Lions", "Zebras", "Kruger Park", "Moremi Park", and "Chobe Park" are all example of a table header)
+
+                </td>
+
+                <!-- Right Column: -->
+                <td width="33%">
+
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>
