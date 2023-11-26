@@ -34,7 +34,7 @@
             background-color: #252B36;
             color: #33C7DE;
             font-family: "Roboto Mono",serif;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: bold;
         }
         .code_tag
@@ -42,7 +42,21 @@
             background-color: #252B36;
             color: #E9AD0C;
             font-family: "Roboto Mono",serif;
-            font-size: 13px;
+            font-size: 14px;
+        }
+        .code_keyword
+        {
+            background-color: #252B36;
+            color: #87FFAF;
+            font-family: "Roboto Mono",serif;
+            font-size: 14px;
+        }
+        .code_string
+        {
+            background-color: #252B36;
+            color: #C061CB;
+            font-family: "Roboto Mono",serif;
+            font-size: 14px;
         }
         .example_code
         {
@@ -63,6 +77,27 @@
         {
             background-color: #24272e;
             color: #E9AD0C;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .example_code_keyword
+        {
+            background-color: #24272e;
+            color: #87FFAF;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .example_code_string
+        {
+            background-color: #24272e;
+            color: #C061CB;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .example_code_function
+        {
+            background-color: #24272e;
+            color: #FFD7D7;
             font-family: "Roboto Mono",serif;
             font-size: 13px;
         }
@@ -114,7 +149,230 @@
 
                 <!-- Main Column: -->
                 <td width="65%" style="vertical-align:top">
-                    main columm
+                    <br>
+                    <br>
+                    Web developers can utilize HTML lists to organize and group a collection of related items.
+                    <br>
+                    <br>
+                    <hr>
+                    <div class="example">
+                        <br>
+                        CS110 List Exercise
+                        <br>
+                        <br>
+                        There are four lists on this page: one ordered, two unordered and one description list.
+                        <br>
+                        Create an HTML file to produce a webpage that looks like the rest of this document.
+                        <br>
+                        <!-- Ordered List -->
+                        <ol type="I">
+                            <li>
+                                Chapter I
+                            </li>
+
+                            <!-- First Unordered List -->
+                            <ul type="disc">
+                                <li>
+                                    Introduction
+                                </li>
+                                <li>
+                                    Preliminaries
+                                </li>
+                            </ul>
+                            <li>
+                                Chapter II
+                            </li>
+
+                            <!-- Second Unordered List -->
+                            <ul type="disc">
+                                <li>
+                                    Triangles
+                                </li>
+                                <li>
+                                    Squares
+                                </li>
+                            </ul>
+                        </ol>
+
+                        <!-- Description List -->
+                        <dl style="font-family: Calibri, sans-serif">
+                            <dt>
+                                &nbsp;&nbsp;&nbsp;Book
+                            </dt>
+                            <dd>
+                                Intro to Geometry
+                            </dd>
+                            <dt>
+                                &nbsp;&nbsp;&nbsp;Magazine
+                            </dt>
+                            <dd>
+                                Scientific American
+                            </dd>
+                        </dl>
+                        <center>
+                            <i>Figure 1: CS110 List Example</i>
+                        </center>
+                        <br>
+                    </div>
+                    <hr>
+                    <br>
+                    <br>
+                    To create a list in HTML, you can use one of the three tags,
+                    <span class="code_operator">&lt;</span><span class="code_tag">ul</span><span class="code_operator">&gt;</span>
+                    ,
+                    <span class="code_operator">&lt;</span><span class="code_tag">dl</span><span class="code_operator">&gt;</span>
+                    , and
+                    <span class="code_operator">&lt;</span><span class="code_tag">ol</span><span class="code_operator">&gt;</span>.
+                    <br>
+                    <br>
+                    <hr>
+                    <div class="example_code">
+                        <br>
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">h3</span><span class="example_code_operator">&gt;</span><span class="example_code_function">Unordered List</span><span class="example_code_operator">&lt;/</span><span class="example_code_tag">h3</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">ul</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>Item 1<span class="example_code_operator">&lt;/</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>Item 2
+                                <br>
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                <span class="example_code_operator">&lt;</span><span class="example_code_tag">ul</span><span class="example_code_operator">&gt;</span>
+                                    <br>
+                                    &nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                                    <span class="example_code_operator">&lt;</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>Subitem 2.1<span class="example_code_operator">&lt;/</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>
+                                    <br>
+                                    &nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                                    <span class="example_code_operator">&lt;</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>Subitem 2.2<span class="example_code_operator">&lt;/</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>
+                                <br>
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                <span class="example_code_operator">&lt;/</span><span class="example_code_tag">ul</span><span class="example_code_operator">&gt;</span>
+                                <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;/</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>Item 3<span class="example_code_operator">&lt;/</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                        <span class="example_code_operator">&lt;/</span><span class="example_code_tag">ul</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        <br>
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">h3</span><span class="example_code_operator">&gt;</span><span class="example_code_function">Descriptive List</span><span class="example_code_operator">&lt;/</span><span class="example_code_tag">h3</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">dl</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">dt</span><span class="example_code_operator">&gt;</span>Term 1<span class="example_code_operator">&lt;/</span><span class="example_code_tag">dt</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">dd</span><span class="example_code_operator">&gt;</span>Definition 1<span class="example_code_operator">&lt;/</span><span class="example_code_tag">dd</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">dt</span><span class="example_code_operator">&gt;</span>Term 2<span class="example_code_operator">&lt;/</span><span class="example_code_tag">dt</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">dd</span><span class="example_code_operator">&gt;</span>Definition 2<span class="example_code_operator">&lt;/</span><span class="example_code_tag">dd</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">dt</span><span class="example_code_operator">&gt;</span>Term 3<span class="example_code_operator">&lt;/</span><span class="example_code_tag">dt</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">dd</span><span class="example_code_operator">&gt;</span>Definition 3<span class="example_code_operator">&lt;/</span><span class="example_code_tag">dd</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                        <span class="example_code_operator">&lt;/</span><span class="example_code_tag">dl</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        <br>
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">h3</span><span class="example_code_operator">&gt;</span><span class="example_code_function">Ordered List (Numbered)</span><span class="example_code_operator">&lt;/</span><span class="example_code_tag">h3</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">ol</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        &nbsp;&nbsp;
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>Step 1<span class="example_code_operator">&lt;/</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        &nbsp;&nbsp;
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>Step 2
+                        <br>
+                        &nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">ol</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        &nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>Substep 2.1<span class="example_code_operator">&lt;/</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        &nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>Substep 2.2<span class="example_code_operator">&lt;/</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        &nbsp;&nbsp;
+                        &nbsp;&nbsp;
+                        <span class="example_code_operator">&lt;/</span><span class="example_code_tag">ol</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        &nbsp;&nbsp;
+                        <span class="example_code_operator">&lt;/</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        &nbsp;&nbsp;
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>Step 3<span class="example_code_operator">&lt;/</span><span class="example_code_tag">li</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        <span class="example_code_operator">&lt;/</span><span class="example_code_tag">ol</span><span class="example_code_operator">&gt;</span>
+                        <div class="example">
+                            <center>
+                                <br>
+                                <i>Figure 2: Three Types of Lists in HTML</i>
+                            </center>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    The initiation of an <b><u>unordered list</u></b> involves using the
+                    <span class="code_operator">&lt;</span><span class="code_tag">ul</span><span class="code_operator">&gt;</span>
+                    tag, and each individual <b><u>list item</u></b> begins with the
+                    <span class="code_operator">&lt;</span><span class="code_tag">li</span><span class="code_operator">&gt;</span>
+                    tag.
+                    <br>
+                    <br>
+                    By default, the list items will be denoted with small black circles, representing bullets.
+                    <br>
+                    <br>
+                    Commencing an <b><u>ordered list</u></b> requires the use of the
+                    <span class="code_operator">&lt;</span><span class="code_tag">ol</span><span class="code_operator">&gt;</span>
+                    tag, and each item within the list begins with the
+                    <span class="code_operator">&lt;</span><span class="code_tag">li</span><span class="code_operator">&gt;</span>
+                    tag.
+                    <br>
+                    <br>
+                    By default, the list items are numbered.
+                    <br>
+                    <br>
+                    HTML additionally accommodates description lists.
+                    <br>
+                    <br>
+                    A description list entails a compilation of terms, each accompanied by a corresponding description.
+                    <br>
+                    <br>
+                    The
+                    <span class="code_operator">&lt;</span><span class="code_tag">dl</span><span class="code_operator">&gt;</span>
+                    tag outlines the <b><u>description list</u></b>, the
+                    <span class="code_operator">&lt;</span><span class="code_tag">dt</span><span class="code_operator">&gt;</span>
+                    tag delineates the <b><u>term</u></b> (i.e., the name), and the
+                    <span class="code_operator">&lt;</span><span class="code_tag">dd</span><span class="code_operator">&gt;</span>
+                    tag furnishes the <b><u>description</u></b> for each term.
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </td>
 
                 <!-- Right Column: -->
