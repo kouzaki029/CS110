@@ -6,27 +6,23 @@
   </head>
 
   <body>
-    <table>
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Publication Year</th>
-      </tr>
-      <tr>
-        <td>The Great Gatsby</td>
-        <td>F. Scott Fitzgerald</td>
-        <td>1925</td>
-      </tr>
-      <tr>
-        <td>To Kill a Mockingbird</td>
-        <td>Harper Lee</td>
-        <td>1960</td>
-      </tr>
-      <tr>
-        <td>1984</td>
-        <td>George Orwell</td>
-        <td>1949</td>
-      </tr>
-    </table>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="programmingLanguage">Favorite Programming Language:</label>
+      <select id="programmingLanguage" name="programmingLanguage">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="csharp">C#</option>
+        <!-- Add more options as needed -->
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>

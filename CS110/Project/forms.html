@@ -22,11 +22,77 @@
             text-decoration-line: underline;
             font-family: "Arial",serif;
         }
-        .code
+        .example
         {
-            background-color: #282C34;
+            background-color: #24272e;
             color: #D4D4D4;
-            font-family: "Courier New",serif;
+            font-family: "Arial",serif;
+            font-size: 16px;
+        }
+        .code_operator
+        {
+            background-color: #252B36;
+            color: #33C7DE;
+            font-family: "Roboto Mono",serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .code_tag
+        {
+            background-color: #252B36;
+            color: #E9AD0C;
+            font-family: "Roboto Mono",serif;
+            font-size: 14px;
+        }
+        .code_keyword
+        {
+            background-color: #252B36;
+            color: #87FFAF;
+            font-family: "Roboto Mono",serif;
+            font-size: 14px;
+        }
+        .code_string
+        {
+            background-color: #252B36;
+            color: #C061CB;
+            font-family: "Roboto Mono",serif;
+            font-size: 14px;
+        }
+        .example_code
+        {
+            background-color: #24272e;
+            color: #ffffff;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .example_code_operator
+        {
+            background-color: #24272e;
+            color: #33C7DE;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .example_code_tag
+        {
+            background-color: #24272e;
+            color: #E9AD0C;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .example_code_keyword
+        {
+            background-color: #24272e;
+            color: #87FFAF;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .example_code_string
+        {
+            background-color: #24272e;
+            color: #C061CB;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
         }
     </style>
 
@@ -75,13 +141,275 @@
                 </td>
 
                 <!-- Main Column: -->
-                <td width="60%">
-                    main columm
+                <td width="65%" style="vertical-align:top">
+                    <br>
+                    <br>
+                    An HTML form serves the purpose of gathering user input, which is typically forwarded to a server for further processing.
+                    <br>
+                    <br>
+                    <hr>
+                    <div class="example">
+                        <br>
+                            <form>
+                                <label for="participantName">Participant's Name:</label><br>
+                                <input type="text" id="participantName" name="participantName"><br><br>
+
+                                <label for="secretNumber">Enter a Secret Number (e.g., 2):</label><br>
+                                <input type="password" id=secretNumber name="secretNumber" size="15" maxlength="30"><br><br>
+
+                                <label for="comment">What Is Your Favorite Time of Day, and Why:</label><br>
+                                <textarea id="comment" name="comment" rows="4" cols="50">
+                                </textarea><br><br>
+
+                                Which Do You Prefer:<br>
+                                <input type="radio" id="coffee" name="coffee" value="coffee">
+                                <label for="coffee">coffee</label><br>
+                                <input type="radio" id="tea" name="tea" value="tea">
+                                <label for="tea">tea</label><br>
+                                <input type="radio" id="neither" name="neither" value="neither">
+                                <label for="neither">neither</label><br><br>
+
+                                Select All That Apply:<br>
+                                <input type="checkbox" id="catPerson" name="catPerson" value="catPerson">
+                                <label for="catPerson">I am a cat-person</label><br>
+                                <input type="checkbox" id="dogPerson" name="dogPerson" value="dogPerson">
+                                <label for="dogPerson">I am a dog-person</label><br><br>
+
+                                <label for="somethingHere_1">
+                                    Are You a Traveler or a Homebody?:
+                                    <select name="somethingHere_1" id="somethingHere_1">
+                                        <option value="traveler">traveler</option>
+                                        <option value="homebody">homebody</option>
+                                        <option value="both">both</option>
+                                    </select>
+                                </label><br><br>
+
+                                <label for="userImage">What's Your Favorite Picture You've Taken or Have Seen:</label><br>
+                                <input type="file" id="userImage" name="userImage"><br><br>
+
+                                <button type="button" onclick="alert('Have a great day!\n\nThank you for doing our Ice Breaker!')">
+                                    <img src="Face_with_Hand_Over_Mouth.png" alt="button" width="68.8" height="68.5">
+                                </button><br>(Click Me...)<br><br>
+
+                                <fieldset>
+                                    <legend>
+                                        Fun Fact
+                                    </legend>
+                                    <label>
+                                        Sea otters hold each others hands, so they won't drift apart.
+                                    </label>
+                                </fieldset><br>
+
+                                <input type="button" value="Submit Response">
+                            </form>
+                            <br>
+                            <center>
+                                <i>Figure 1: CS 110 Ice Breaker Form Example</i>
+                            </center>
+                        <br>
+                    </div>
+                    <hr>
+                    <br>
+                    <br>
+                    Forms can be defined using the
+                    <span class="code_operator">&lt;</span><span class="code_tag">form</span><span class="code_operator">&gt;</span>
+                    tag,
+                    <span class="code_operator">&lt;</span><span class="code_tag">label</span><span class="code_operator">&gt;</span>
+                    tag,
+                    <span class="code_operator">&lt;</span><span class="code_tag">input</span><span class="code_operator">&gt;</span>
+                    tag,
+                    <span class="code_operator">&lt;</span><span class="code_tag">option</span><span class="code_operator">&gt;</span>
+                    tag,
+                    <span class="code_operator">&lt;</span><span class="code_tag">button</span><span class="code_operator">&gt;</span>
+                    tag,
+                    <span class="code_operator">&lt;</span><span class="code_tag">textarea</span><span class="code_operator">&gt;</span>
+                    tag, and the
+                    <span class="code_operator">&lt;</span><span class="code_tag">fieldset</span><span class="code_operator">&gt;</span>
+                    tag.
+                    <br>
+                    <br>
+                    <hr>
+                    <div class="example_code">
+                        <br>
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">form</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">label</span> <span class="example_code_keyword">for</span><span class="example_code_operator">=</span><span class="example_code_string">"name"</span><span class="example_code_operator">&gt;</span>Name:<span class="example_code_operator">&lt;/</span><span class="example_code_tag">label</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">input</span> <span class="example_code_keyword">type</span><span class="example_code_operator">=</span><span class="example_code_string">"text"</span> <span class="example_code_keyword">id</span><span class="example_code_operator">=</span><span class="example_code_string">"name"</span> <span class="example_code_keyword">name</span><span class="example_code_operator">=</span><span class="example_code_string">"name"</span> <span class="example_code_keyword">required</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">label</span> <span class="example_code_keyword">for</span><span class="example_code_operator">=</span><span class="example_code_string">"email"</span><span class="example_code_operator">&gt;</span>E-mail:<span class="example_code_operator">&lt;/</span><span class="example_code_tag">label</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">input</span> <span class="example_code_keyword">type</span><span class="example_code_operator">=</span><span class="example_code_string">"email"</span> <span class="example_code_keyword">id</span><span class="example_code_operator">=</span><span class="example_code_string">"email"</span> <span class="example_code_keyword">name</span><span class="example_code_operator">=</span><span class="example_code_string">"email"</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">label</span> <span class="example_code_keyword">for</span><span class="example_code_operator">=</span><span class="example_code_string">"programmingLanguage"</span><span class="example_code_operator">&gt;</span>Favorite Programming Language:<span class="example_code_operator">&lt;/</span><span class="example_code_tag">label</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">select</span> <span class="example_code_keyword">id</span><span class="example_code_operator">=</span><span class="example_code_string">"programmingLanguage"</span> <span class="example_code_keyword">name</span><span class="example_code_operator">=</span><span class="example_code_string">"programmingLanguage"</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                <span class="example_code_operator">&lt;</span><span class="example_code_tag">option</span> <span class="example_code_keyword">value</span><span class="example_code_operator">=</span><span class="example_code_string">"javascript"</span><span class="example_code_operator">&gt;</span>Javascript<span class="example_code_operator">&lt;/</span><span class="example_code_tag">option</span><span class="example_code_operator">&gt;</span>
+                                <br>
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                <span class="example_code_operator">&lt;</span><span class="example_code_tag">option</span> <span class="example_code_keyword">value</span><span class="example_code_operator">=</span><span class="example_code_string">"python"</span><span class="example_code_operator">&gt;</span>Python<span class="example_code_operator">&lt;/</span><span class="example_code_tag">option</span><span class="example_code_operator">&gt;</span>
+                                <br>
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                <span class="example_code_operator">&lt;</span><span class="example_code_tag">option</span> <span class="example_code_keyword">value</span><span class="example_code_operator">=</span><span class="example_code_string">"java"</span><span class="example_code_operator">&gt;</span>Java<span class="example_code_operator">&lt;/</span><span class="example_code_tag">option</span><span class="example_code_operator">&gt;</span>
+                                <br>
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                <span class="example_code_operator">&lt;</span><span class="example_code_tag">option</span> <span class="example_code_keyword">value</span><span class="example_code_operator">=</span><span class="example_code_string">"csharp"</span><span class="example_code_operator">&gt;</span>C#<span class="example_code_operator">&lt;/</span><span class="example_code_tag">option</span><span class="example_code_operator">&gt;</span>
+                                <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;/</span><span class="example_code_tag">select</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">button</span> <span class="example_code_keyword">type</span><span class="example_code_operator">=</span><span class="example_code_string">"submit"</span><span class="example_code_operator">&gt;</span>Submit:<span class="example_code_operator">&lt;/</span><span class="example_code_tag">button</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        <span class="example_code_operator">&lt;/</span><span class="example_code_tag">form</span><span class="example_code_operator">&gt;</span>
+                        <div class="example">
+                            <center>
+                                <br>
+                                <i>Figure 2: A Simple Form in HTML</i>
+                            </center>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <br>
+
+                    To create a form, you need to first include the
+                    <span class="code_operator">&lt;</span><span class="code_tag">form</span><span class="code_operator">&gt;</span>
+                    tag, followed by an ending
+                    <span class="code_operator">&lt;/</span><span class="code_tag">form</span><span class="code_operator">&gt;</span>
+                    tag to indicate where the last line of the <b><u>form</u></b> is.
+                    <br>
+                    <br>
+                    It is important to note, similar to the
+                    <span class="code_operator">&lt;</span><span class="code_tag">form</span><span class="code_operator">&gt;</span>
+                    tag, the
+                    <span class="code_operator">&lt;</span><span class="code_tag">label</span><span class="code_operator">&gt;</span>
+                    tag, the
+                    <span class="code_operator">&lt;</span><span class="code_tag">select</span><span class="code_operator">&gt;</span>
+                    tag, the
+                    <span class="code_operator">&lt;</span><span class="code_tag">option</span><span class="code_operator">&gt;</span>
+                    tag, the
+                    <span class="code_operator">&lt;</span><span class="code_tag">button</span><span class="code_operator">&gt;</span>
+                    tag, the
+                    <span class="code_operator">&lt;</span><span class="code_tag">textarea</span><span class="code_operator">&gt;</span>
+                    tag, and the
+                    <span class="code_operator">&lt;</span><span class="code_tag">fieldset</span><span class="code_operator">&gt;</span>
+                    tag all must have an ending tag. In essence,
+                    <span class="code_operator">&lt;/</span><span class="code_tag">form</span><span class="code_operator">&gt;</span>
+                    ,
+                    <span class="code_operator">&lt;/</span><span class="code_tag">label</span><span class="code_operator">&gt;</span>
+                    ,
+                    <span class="code_operator">&lt;/</span><span class="code_tag">select</span><span class="code_operator">&gt;</span>
+                    ,
+                    <span class="code_operator">&lt;/</span><span class="code_tag">option</span><span class="code_operator">&gt;</span>
+                    ,
+                    <span class="code_operator">&lt;/</span><span class="code_tag">button</span><span class="code_operator">&gt;</span>
+                    ,
+                    <span class="code_operator">&lt;/</span><span class="code_tag">textarea</span><span class="code_operator">&gt;</span>
+                    ,
+                    <span class="code_operator">&lt;/</span><span class="code_tag">fieldset</span><span class="code_operator">&gt;</span>
+                    respectively.
+
+                    <br>
+                    <br>
+                    Within the
+                    <span class="code_operator">&lt;</span><span class="code_tag">form</span><span class="code_operator">&gt;</span>
+                    tags, you can include which ever form element you want (i.e.,
+                    <span class="code_operator">&lt;</span><span class="code_tag">label</span><span class="code_operator">&gt;</span>
+                    tag,
+                    <span class="code_operator">&lt;</span><span class="code_tag">input</span><span class="code_operator">&gt;</span>
+                    tag,
+                    <span class="code_operator">&lt;</span><span class="code_tag">select</span><span class="code_operator">&gt;</span>
+                    tag,
+                    <span class="code_operator">&lt;</span><span class="code_tag">button</span><span class="code_operator">&gt;</span>
+                    tag,
+                    <span class="code_operator">&lt;</span><span class="code_tag">textarea</span><span class="code_operator">&gt;</span>
+                    tag, or even the
+                    <span class="code_operator">&lt;</span><span class="code_tag">fieldset</span><span class="code_operator">&gt;</span>
+                    tag), however it is best practice to use the
+                    <span class="code_operator">&lt;</span><span class="code_tag">label</span><span class="code_operator">&gt;</span>
+                    tag first to indicate to the user the purpose of the following element is used for (e.g., "Participant's Name:" is before the textbox in Figure 1).
+                    <br>
+                    <br>
+                    The
+                    <span class="code_operator">&lt;</span><span class="code_tag">input</span><span class="code_operator">&gt;</span>
+                    tag, supports various form components, such as radio buttons, checkboxes, submit buttons, buttons, and textboxes.
+                    <br>
+                    <br> To create a <b><u>radio button</u></b>, you write a
+                    <span class="code_operator">&lt;</span><span class="code_tag">input</span> <span class="code_keyword">type</span><span class="code_operator">=</span><span class="code_string">"radio"</span><span class="code_operator">&gt;</span>
+                    tag.
+                    <br>
+                    <br> To create a <b><u>checkbox</u></b>, you write a
+                    <span class="code_operator">&lt;</span><span class="code_tag">input</span> <span class="code_keyword">type</span><span class="code_operator">=</span><span class="code_string">"checkbox"</span><span class="code_operator">&gt;</span>
+                    tag.
+                    <br>
+                    <br> To create a <b><u>submit button</u></b>, you write a
+                    <span class="code_operator">&lt;</span><span class="code_tag">input</span> <span class="code_keyword">type</span><span class="code_operator">=</span><span class="code_string">"submit"</span><span class="code_operator">&gt;</span>
+                    tag.
+                    <br>
+                    <br> To create a <b><u>button</u></b>, you write a
+                    <span class="code_operator">&lt;</span><span class="code_tag">input</span> <span class="code_keyword">type</span><span class="code_operator">=</span><span class="code_string">"button"</span><span class="code_operator">&gt;</span>
+                    tag.
+                    <br>
+                    <br> To create a <b><u>textbox</u></b>, you write a
+                    <span class="code_operator">&lt;</span><span class="code_tag">input</span> <span class="code_keyword">type</span><span class="code_operator">=</span><span class="code_string">"text"</span><span class="code_operator">&gt;</span>
+                    tag.
+                    <br>
+                    <br>
+                    The <span class="code_keyword">name</span> and <span class="code_keyword">id</span> attributes are used to identify a HTML element.
+                    <br>
+                    <br>
+                    Unlike <span class="code_keyword">name</span>, <span class="code_keyword">id</span> attribute must be unique - no two HTML elements can share the same id otherwise the two elements become ambiguous. A good example could be if there are 25 students in a class but there are three students with the name "John", even though they all share the same name, each John has a unique student id that distinguishes them. If one John has an overdue book, then one of the other Johns won't be fined because each John has a unique.
+                    <br>
+                    <br>
+                    Buttons can also be created using the
+                    <span class="code_operator">&lt;</span><span class="code_tag">button</span><span class="code_operator">&gt;</span>
+                    tag. Two types the <span class="code_operator">&lt;</span><span class="code_tag">button</span><span class="code_operator">&gt;</span> tag can have are <span class="code_string">"button"</span> and <span class="code_string">"submit"</span>.
+                    <br>
+                    <br>
+                    The
+                    <span class="code_operator">&lt;</span><span class="code_tag">select</span><span class="code_operator">&gt;</span>
+                    tag is used to have a <b><u>drop-down selection</u></b> for the user. To create items in the drop-down selection, the
+                    <span class="code_operator">&lt;</span><span class="code_tag">option</span><span class="code_operator">&gt;</span>
+                    tag is used.
+                    <br>
+                    <br>
+                    The
+                    <span class="code_operator">&lt;</span><span class="code_tag">textarea</span><span class="code_operator">&gt;</span>
+                    tag is used to have a <b><u>multiple line textbox</u></b>. The
+                    <span class="code_operator">&lt;</span><span class="code_tag">textarea</span><span class="code_operator">&gt;</span>
+                    tag is commonly used for paragraph responses on forms.
+                    <br>
+                    <br>
+                    The
+                    <span class="code_operator">&lt;</span><span class="code_tag">fieldset</span><span class="code_operator">&gt;</span>
+                    tag is used to group common HTML elements (for example a form need to collect the user's name, address, phone, etc, but all of these can be group as "Contact Info"). The
+                    <span class="code_operator">&lt;</span><span class="code_tag">fieldset</span><span class="code_operator">&gt;</span>
+                    tag can also be used to draw emphasis to the form.
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
                 </td>
 
                 <!-- Right Column: -->
-                <td width="33%">
-                    column 3
+                <td width="28%">
+
                 </td>
             </tr>
         </table>

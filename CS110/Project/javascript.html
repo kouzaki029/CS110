@@ -1,89 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<style>
-    .header
-    {
-        font-size: 24pt;
-        background-color: #282C34;
-        color: #D4D4D4;
-        font-family: "Arial",serif;
-        font-weight: 500;
-    }
-    body
-    {
-        background-color: #282C34;
-        color: #D4D4D4;
-        font-family: "Arial",serif;
-    }
-    .url
-    {
-        background-color: #282C34;
-        color: #3F6693;
-        text-decoration-line: underline;
-        font-family: "Arial",serif;
-    }
-    .code
-    {
-        background-color: #282C34;
-        color: #D4D4D4;
-        font-family: "Courier New",serif;
-    }
-</style>
+    <style>
+        .header
+        {
+            font-size: 24pt;
+            background-color: #282C34;
+            color: #D4D4D4;
+            font-family: "Arial",serif;
+            font-weight: 500;
+        }
+        body
+        {
+            background-color: #282C34;
+            color: #D4D4D4;
+            font-family: "Arial",serif;
+        }
+        .url
+        {
+            background-color: #282C34;
+            color: #3F6693;
+            text-decoration-line: underline;
+            font-family: "Arial",serif;
+        }
+        .example
+        {
+            background-color: #24272e;
+            color: #D4D4D4;
+            font-family: "Arial",serif;
+            font-size: 16px;
+        }
+        .code_operator
+        {
+            background-color: #252B36;
+            color: #33C7DE;
+            font-family: "Roboto Mono",serif;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .code_tag
+        {
+            background-color: #252B36;
+            color: #E9AD0C;
+            font-family: "Roboto Mono",serif;
+            font-size: 14px;
+        }
+        .code_keyword
+        {
+            background-color: #252B36;
+            color: #87FFAF;
+            font-family: "Roboto Mono",serif;
+            font-size: 14px;
+        }
+        .code_string
+        {
+            background-color: #252B36;
+            color: #C061CB;
+            font-family: "Roboto Mono",serif;
+            font-size: 14px;
+        }
+        .example_code
+        {
+            background-color: #24272e;
+            color: #ffffff;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .example_code_operator
+        {
+            background-color: #24272e;
+            color: #33C7DE;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .example_code_tag
+        {
+            background-color: #24272e;
+            color: #E9AD0C;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .example_code_keyword
+        {
+            background-color: #24272e;
+            color: #87FFAF;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .example_code_string
+        {
+            background-color: #24272e;
+            color: #C061CB;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+        .example_code_function
+        {
+            background-color: #24272e;
+            color: #FFD7D7;
+            font-family: "Roboto Mono",serif;
+            font-size: 13px;
+        }
+    </style>
 
-<head>
-    <meta charset="UTF-8">
-    <title>JavaSript in HTML</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaSript in HTML</title>
+        <script language="JavaScript">
+            function Multiply(form){
+                //get three numbers off of the form in text format
+                var num_Of_Chairs = form.numOfChairs.value;
+                //convert the numbers to a numerical format for calculating
+                num_Of_Chairs=eval(num_Of_Chairs);
+                // do the calculation
+                var num_Of_Legs= (num_Of_Chairs * 4);
+                //put result of calculation on form
+                form.numOfLegs.value = num_Of_Legs;
+            }
+        </script>
+    </head>
 
-<body>
-<table width="98%">
-    <!-- Banner: -->
-    <tr>
-        <td height="50" colspan="3" class="header">
-            &nbsp;
-            CS 110 Summary
-        </td>
-    </tr>
+    <body>
+        <table width="98%">
+            <!-- Banner: -->
+            <tr>
+                <td height="50" colspan="3" class="header">
+                    &nbsp;
+                    CS 110 Summary
+                </td>
+            </tr>
 
-    <tr>
-        <!-- Table of Contents: -->
-        <td height="250" width="20%" style="vertical-align:top">
-            <p>
-                &nbsp;&nbsp;
-                <a href="index.html" class="url">Home</a>
-            </p>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="text.html" class="url">Text</a>
-            </p>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="lists.html" class="url">Lists</a>
-            </p>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="tables.html" class="url">Tables</a>
-            </p>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="forms.html" class="url">Forms</a>
-            </p>
-            <p>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="javascript.html" class="url">JavaScript</a>
-            </p>
-        </td>
+            <tr>
+                <!-- Table of Contents: -->
+                <td height="250" width="20%" style="vertical-align:top">
+                    <p>
+                        &nbsp;&nbsp;
+                        <a href="index.html" class="url">Home</a>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="text.html" class="url">Text</a>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="lists.html" class="url">Lists</a>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="tables.html" class="url">Tables</a>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="forms.html" class="url">Forms</a>
+                    </p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="javascript.html" class="url">JavaScript</a>
+                    </p>
+                </td>
 
-        <!-- Main Column: -->
-        <td width="60%">
-            main columm
-        </td>
+                <!-- Main Column: -->
+                <td width="65%" style="vertical-align:top">
+                    <br>
+                    <br>
+                    JavaScript enhances the dynamism and interactivity of HTML pages.
+                    <br>
+                    <br>
+                    <hr>
+                    <div class="example">
+                        <br>
+                            <form name="myForm">
+                                Number of Chairs in the Truck:
+                                <input type="text" name="numOfChairs">
+                                <input type="button" name="go" value=" Calculate " onClick="Multiply(this.form)"><br><br>
+                                Number of Legs on a Truckload of 4 Legged Chairs:
+                                <input type="text" name="numOfLegs">
+                            </form>
+                            <br>
+                            <center>
+                                <i>Figure 1: JavaScript Calculator Example</i>
+                            </center>
+                        <br>
+                    </div>
+                    <hr>
+                    <br>
+                    <br>
+                    The
+                    <span class="example_code_operator">&lt;</span><span class="example_code_tag">script</span><span class="example_code_operator">&gt;</span>
+                    tag in HTML serves to declare a client-side script, typically JavaScript. This element can either encapsulate script statements directly or reference an external script file via the src attribute.
+                    <br>
+                    <br>
+                    JavaScript finds frequent application in tasks such as image manipulation, form validation, and making dynamic alterations to content.
+                    <br>
+                    <br>
+                    For selecting HTML elements, JavaScript commonly employs the document.getElementById() method.
+                    <br>
+                    <br>
+                    In the following JavaScript illustration, the script changes the text of an HTML element when a button is clicked.
+                    <br>
+                    <br>
+                    <hr>
+                    <div class="example_code">
+                        <br>
+                        <span class="example_code_operator">&lt;</span><span class="example_code_tag">body</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">h1</span> <span class="example_code_keyword">id</span><span class="example_code_operator">=</span><span class="example_code_string">"changeMe"</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                <span class="example_code_function">Hello, there!</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;/</span><span class="example_code_tag">h1</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">button</span> <span class="example_code_function">onclick="changeText</span>()<span class="example_code_function">"</span><span class="example_code_operator">&gt;</span>
+                                <br>
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                Click me!
+                                <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;/</span><span class="example_code_tag">button</span><span class="example_code_operator">&gt;</span>
+                            <br>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;</span><span class="example_code_tag">script</span><span class="example_code_operator">&gt;</span>
+                                <br>
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                <span class="example_code_operator">function</span> <span class="example_code_function">changeText</span>()
+                                <br>
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                <span class="example_code_operator">{</span>
+                                    <br>
+                                    &nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                                    <span class="example_code_operator">var</span> <span class="example_code_function">element =</span> <span class="example_code_tag">document</span><span class="example_code_function">.getElementID</span>(<span class="example_code_string">"changeMe"</span>)<span class="example_code_function">;</span>
+                                    <br>
+                                    <br>
+                                    &nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                                    &nbsp;&nbsp;
+                                    <span class="example_code_function">element.textContent =</span> <span class="example_code_string">"Hello, HTML Beginners!"</span><span class="example_code_function">;</span>
+                                <br>
+                                &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                                <span class="example_code_operator">}</span>
+                            <br>
+                            &nbsp;&nbsp;
+                            <span class="example_code_operator">&lt;/</span><span class="example_code_tag">script</span><span class="example_code_operator">&gt;</span>
+                        <br>
+                        <span class="example_code_operator">&lt;/</span><span class="example_code_tag">body</span><span class="example_code_operator">&gt;</span>
+                        <div class="example">
+                            <center>
+                                <br>
+                                <i>Figure 2: A Simple Javascript Function in HTML</i>
+                            </center>
+                        </div>
+                    </div>
 
-        <!-- Right Column: -->
-        <td width="33%">
-            column 3
-        </td>
-    </tr>
-</table>
-</body>
+                    <hr>
+                    <br>
+                    To create a JavaScript, the
+                    <span class="code_operator">&lt;</span><span class="code_tag">script</span><span class="code_operator">&gt;</span> tag and an ending
+                    <span class="code_operator">&lt;/</span><span class="code_tag">script</span><span class="code_operator">&gt;</span> tag must be included.
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </td>
+
+                <!-- Right Column: -->
+                <td width="28%">
+
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>
