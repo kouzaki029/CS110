@@ -1,43 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body
+      {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+      h1
+      {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0066cc;
+      }
+      h2
+      {
+        font-size: 20px;
+        font-weight: bold;
+        color: #009900;
+      }
+      p
+      {
+        font-size: 16px;
+      }
+      .important-text
+      {
+        font-style: italic;
+        text-decoration: underline;
+      }
+      #special-text
+      {
+        font-size: 18px;
+        color: #ff6600;
+      }
+    </style>
+    <title>HTML Sample Program</title>
   </head>
 
   <body>
-    <h3>Unordered List (Bullets)</h3>
-    <ul>
-      <li>Item 1</li>
-      <li>Item 2
-        <ul>
-          <li>Subitem 2.1</li>
-          <li>Subitem 2.2</li>
-        </ul>
-      </li>
-      <li>Item 3</li>
-    </ul>
+    <h1>This is an <span class="important-text">HTML</span> Sample Program</h1>
+    <h2>Introduction</h2>
+    <p>Welcome to the world of HTML. In this program, we will explore various HTML elements and attributes.</p>
+    <hr>
+    <center>
+      <p>This text is centered.</p>
+    </center>
+    <p><b>This text is bold.</b> <i>This text is italic.</i> <u>This text is underlined.</u></p>
+    <p>Non-breaking space:&nbsp;HTML allows you to use &amp;nbsp; to prevent a line break.</p>
+    <p>
+      Line break: This is a line of text.
+      <br>
+      And this is on a new line.
+    </p>
 
-    <h3>Descriptive List</h3>
-    <dl>
-      <dt>Term 1</dt>
-      <dd>Definition 1</dd>
-      <dt>Term 2</dt>
-      <dd>Definition 2</dd>
-      <dt>Term 3</dt>
-      <dd>Definition 3</dd>
-    </dl>
+    <h2>Styling with &lt;style&gt;</h2>
+    <div style="background-color: #ffffcc; padding: 10px;">
+      <p>This text has a yellow background color.</p>
+    </div>
+    <p id="special-text">This text is styled using an ID.</p>
 
-    <h3>Ordered List (Numbers)</h3>
-    <ol>
-      <li>Step 1</li>
-      <li>Step 2
-        <ol>
-          <li>Substep 2.1</li>
-          <li>Substep 2.2</li>
-        </ol>
-      </li>
-      <li>Step 3</li>
-    </ol>
+    <h2>Links and Images</h2>
+    <p>Visit <a href="https://www.example.com">Example.com</a> for more information.</p>
+    <img src="https://via.placeholder.com/150" width="150" height="150" alt="Sample Image">
   </body>
 </html>
